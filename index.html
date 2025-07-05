@@ -14,25 +14,26 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9fcf9;
+      background-color: #fffdfa;
       color: #2d2d2d;
     }
 
     header {
-      background: linear-gradient(90deg, #6abf69, #3ea861);
+      background: #fffae6;
       padding: 30px 20px;
       text-align: center;
-      color: white;
     }
 
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+      color: #4CAF50;
     }
 
     header p {
       margin-top: 10px;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      color: #666;
     }
 
     .section {
@@ -43,6 +44,7 @@
     .section h2 {
       font-size: 2rem;
       margin-bottom: 20px;
+      color: #333;
     }
 
     .produk {
@@ -53,16 +55,12 @@
     }
 
     .produk-item {
-      background-color: #fff;
+      background-color: #ffffff;
       padding: 20px;
       border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      transition: transform 0.3s;
-      width: 260px;
-    }
-
-    .produk-item:hover {
-      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+      width: 280px;
+      text-align: left;
     }
 
     .produk-item img {
@@ -71,28 +69,43 @@
     }
 
     .produk-item h3 {
-      margin-top: 15px;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      margin: 15px 0 10px 0;
+      color: #3ea861;
     }
 
     .produk-item p {
-      color: #4caf50;
+      margin: 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .produk-item .harga {
+      margin-top: 10px;
+      color: #e91e63;
       font-weight: bold;
-      margin: 5px 0 0 0;
     }
 
     .cta {
-      background-color: #3ea861;
-      color: white;
+      background-color: #fef3c7;
       padding: 40px 20px;
-      text-align: center;
+    }
+
+    .cta h2 {
+      color: #d97706;
+      margin-bottom: 10px;
+    }
+
+    .cta p {
+      color: #6b7280;
+      font-size: 1rem;
     }
 
     .cta a {
       display: inline-block;
       margin-top: 15px;
-      background: white;
-      color: #3ea861;
+      background: #3ea861;
+      color: white;
       padding: 12px 24px;
       border-radius: 8px;
       text-decoration: none;
@@ -101,21 +114,18 @@
     }
 
     .cta a:hover {
-      background: #f0f0f0;
+      background: #2f8a4c;
     }
 
     footer {
       text-align: center;
-      background: #e6e6e6;
+      background: #f3f4f6;
       padding: 20px;
       font-size: 0.9rem;
+      color: #666;
     }
 
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-
       .produk {
         flex-direction: column;
         align-items: center;
@@ -131,43 +141,40 @@
 
 <header>
   <h1>SehatLokal</h1>
-  <p>Cemilan Sehat dari Bahan Lokal Indonesia</p>
+  <p>Cemilan sehat dari bahan lokal Indonesia, tanpa MSG & pengawet!</p>
 </header>
 
 <section class="section">
-  <h2>Kenapa Pilih SehatLokal?</h2>
-  <p>✅ Terbuat dari bahan alami & organik<br>
-     ✅ Tanpa MSG, tanpa bahan kimia<br>
-     ✅ Lezat, renyah, dan sehat!</p>
+  <h2>Kenapa Memilih SehatLokal?</h2>
+  <p>✅ Diolah dari bahan alami pilihan<br>
+     ✅ Aman untuk anak-anak hingga orang tua<br>
+     ✅ Cocok untuk diet, ngemil santai, atau oleh-oleh khas daerah</p>
 </section>
 
 <section class="section produk">
   <div class="produk-item">
     <img src="kelor.jpg" alt="Keripik Kelor">
     <h3>Keripik Kelor</h3>
-    <p>Rp 12.000</p>
+    <p>Renyah, gurih, dan kaya antioksidan! Keripik kelor kami dibuat dari daun kelor pilihan tanpa bahan kimia.</p>
+    <p class="harga">Rp 12.000</p>
   </div>
-  <div class="produk-item">
-    <img src="peyek.jpg" alt="Rempeyek Jamur">
-    <h3>Rempeyek Tempe</h3>
-    <p>Rp 10.000</p>
-  </div>
-</section>
 
-<section class="section">
-  <h2>Kata Mereka</h2>
-  <p>“Rasanya gurih, tapi tetap sehat. Anak-anak suka banget keripik kelornya!”<br>
-     – Rina, Surabaya</p>
+  <div class="produk-item">
+    <img src="dryfruit.jpg" alt="Dry Fruit">
+    <h3>Dry Fruit (Buah Kering)</h3>
+    <p>Campuran buah tropis kering seperti pisang, nanas, dan pepaya, cocok untuk camilan sehat kaya serat & rasa!</p>
+    <p class="harga">Rp 15.000</p>
+  </div>
 </section>
 
 <section class="cta">
-  <h2>Siap Coba Cemilan Sehat?</h2>
-  <p>Langsung pesan sekarang melalui WhatsApp!</p>
+  <h2>Pesan Sekarang!</h2>
+  <p>Tinggal klik tombol di bawah dan chat kami di WhatsApp. Siap kirim ke seluruh Indonesia!</p>
   <a href="https://wa.me/6281234567890" target="_blank">Pesan via WhatsApp</a>
 </section>
 
 <footer>
-  &copy; 2025 SehatLokal | Diproduksi oleh UMKM Indonesia, Kab. Mojokerto
+  &copy; 2025 SehatLokal | Diproduksi oleh UMKM Mojokerto | #CemilanSehatIndonesia
 </footer>
 
 </body>

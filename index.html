@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SehatLokal - Cemilan Sehat Khas Daerah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fcf9;
+      color: #2d2d2d;
+    }
+
+    header {
+      background: linear-gradient(90deg, #6abf69, #3ea861);
+      padding: 30px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .produk {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .produk-item {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+      width: 260px;
+    }
+
+    .produk-item:hover {
+      transform: scale(1.05);
+    }
+
+    .produk-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .produk-item h3 {
+      margin-top: 15px;
+      font-size: 1.2rem;
+    }
+
+    .produk-item p {
+      color: #4caf50;
+      font-weight: bold;
+      margin: 5px 0 0 0;
+    }
+
+    .cta {
+      background-color: #3ea861;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 15px;
+      background: white;
+      color: #3ea861;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background: #f0f0f0;
+    }
+
+    footer {
+      text-align: center;
+      background: #e6e6e6;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .produk {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .produk-item {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SehatLokal</h1>
+  <p>Cemilan Sehat dari Bahan Lokal Indonesia</p>
+</header>
+
+<section class="section">
+  <h2>Kenapa Pilih SehatLokal?</h2>
+  <p>✅ Terbuat dari bahan alami & organik<br>
+     ✅ Tanpa MSG, tanpa bahan kimia<br>
+     ✅ Lezat, renyah, dan sehat!</p>
+</section>
+
+<section class="section produk">
+  <div class="produk-item">
+    <img src="https://via.placeholder.com/250x150.png?text=Keripik+Kelor" alt="Keripik Kelor">
+    <h3>Keripik Kelor</h3>
+    <p>Rp 12.000</p>
+  </div>
+  <div class="produk-item">
+    <img src="https://via.placeholder.com/250x150.png?text=Rempeyek+Jamur" alt="Rempeyek Jamur">
+    <h3>Rempeyek Jamur</h3>
+    <p>Rp 10.000</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Kata Mereka</h2>
+  <p>“Rasanya gurih, tapi tetap sehat. Anak-anak suka banget keripik kelornya!”<br>
+     – Rina, Surabaya</p>
+</section>
+
+<section class="cta">
+  <h2>Siap Coba Cemilan Sehat?</h2>
+  <p>Langsung pesan sekarang melalui WhatsApp!</p>
+  <a href="https://wa.me/6281234567890" target="_blank">Pesan via WhatsApp</a>
+</section>
+
+<footer>
+  &copy; 2025 SehatLokal | Diproduksi oleh UMKM Indonesia, Kab. Mojokerto
+</footer>
+
+</body>
+</html>
